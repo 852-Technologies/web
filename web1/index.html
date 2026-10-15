@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="852 Technologies creates practical mobile apps and solution platforms that make everyday life easier and help people move forward." />
+    <meta name="theme-color" content="#ffffff" />
+    <title>852 Technologies — Making Everyday Life Easier</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9M9.5 19v-5h5v5"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M9 7V5h6v2M3 12h18M10 12v2h4v-2"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="5.5" cy="9" r="2.3"/><circle cx="18.5" cy="9" r="2.3"/><path d="M6.5 20v-1.6a5.5 5.5 0 0 1 11 0V20M1.5 20v-1a4 4 0 0 1 5.1-3.8M22.5 20v-1a4 4 0 0 0-5.1-3.8"/></symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C11 4 5 8 5 15c0 3 2 5 5 5 7 0 10-7 10-16Z"/><path d="M4 21c3-6 7-9 12-12"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M9.5 20V5M15 20v-8M20 20V3"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 5h4M10.5 19h3"/></symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14 6a5 5 0 0 0-6.8 6.8L3 17l4 4 4.2-4.2A5 5 0 0 0 18 10l-3 3-4-4 3-3Z"/></symbol>
+      <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z"/><path d="M9 8h6M9 12h6M9 16h4"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="m3 7 9-4 9 4-9 4-9-4Z"/><path d="M3 7v10l9 4 9-4V7M12 11v10"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h3M13 14h3M8 17h3"/></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5.2-3.2 8.5-8 10-4.8-1.5-8-4.8-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></symbol>
+      <symbol id="i-trend" viewBox="0 0 24 24"><path d="M4 18 10 12l4 4 6-8"/><path d="M15 8h5v5"/></symbol>
+      <symbol id="i-gear" viewBox="0 0 24 24"><g transform="translate(1.1 0)"><circle cx="10.9" cy="12" r="3"/><path d="M19 13.5V10.5l-2-.6-.8-1.9 1-1.8-2.1-2.1-1.8 1-1.9-.8-.6-2H8.8l-.6 2-1.9.8-1.8-1-2.1 2.1 1 1.8-.8 1.9-2 .6v3l2 .6.8 1.9-1 1.8 2.1 2.1 1.8-1 1.9.8.6 2h3l.6-2 1.9-.8 1.8 1 2.1-2.1-1-1.8.8-1.9 2-.6Z"/></g></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.8a5.4 5.4 0 0 0-7.7 0L12 6.9l-1.1-1.1a5.4 5.4 0 0 0-7.7 7.7L12 22l8.8-8.5a5.4 5.4 0 0 0 0-7.7Z"/></symbol>
+    </svg>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header" data-header>
+      <div class="shell nav-shell">
+        <a class="brand" href="#top" aria-label="852 Technologies home"><strong>852</strong><span>TECHNOLOGIES</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+          <a class="active" href="#top">Home</a><a href="#products">Products</a><a href="#story">Our Story</a><a href="#concepts">Future Concepts</a><a href="https://opnform.com/forms/client-inquiry-service-request-form-zqhnap?2353851e-27a3-4740-9375-fe7be45b1de8=Contact+Us" target="_blank" rel="noopener">Support</a><a class="nav-cta" href="https://opnform.com/forms/client-inquiry-service-request-form-zqhnap?2353851e-27a3-4740-9375-fe7be45b1de8=Contact+Us" target="_blank" rel="noopener">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Practical tools for a brighter tomorrow</p>
+            <h1>Making Everyday<br />Life Easier.<br />Helping People<br /><em>Move Forward.</em></h1>
+            <p>We build practical digital tools that help individuals and businesses stay organised, make better-informed decisions, and navigate everyday challenges and important opportunities.</p>
+            <div class="button-row"><a class="button button-primary" href="#products">Explore Our Products <span>→</span></a><a class="button button-secondary" href="#story">Our Story</a></div>
+          </div>
+          <div class="hero-visual reveal">
+            <img src="assets/hero-bright-life-v2.png" alt="A woman enjoying a calmer, more organised day while using her laptop at home" />
+            <p class="hero-note">Organized today.<br /><strong>Brighter tomorrow.</strong></p>
+            <div class="hero-actions" aria-label="Life goals supported by 852 Technologies">
+              <a class="pill-home" href="#home-solutions"><span class="round-icon green"><svg aria-hidden="true"><use href="#i-home"/></svg></span>Manage your home</a>
+              <a class="pill-career" href="#ematch-lite"><span class="round-icon blue"><svg aria-hidden="true"><use href="#i-briefcase"/></svg></span>Advance your career</a>
+              <a class="pill-opportunity" href="#ematch"><span class="round-icon purple"><svg aria-hidden="true"><use href="#i-users"/></svg></span>Find new opportunities</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefit-strip" aria-label="Benefits"><div class="shell benefit-grid">
+        <article><span class="benefit-icon green"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><div><strong>Stay Organised</strong><small>in Daily Life</small></div></article>
+        <article><span class="benefit-icon blue"><svg aria-hidden="true"><use href="#i-chart"/></svg></span><div><strong>Make Better</strong><small>Decisions</small></div></article>
+        <article><span class="benefit-icon purple"><svg aria-hidden="true"><use href="#i-users"/></svg></span><div><strong>Be More Productive</strong><small>and Prepared</small></div></article>
+        <article><span class="benefit-icon royal"><svg aria-hidden="true"><use href="#i-star"/></svg></span><div><strong>Create Better</strong><small>Opportunities</small></div></article>
+      </div></section>
+      <section class="ecosystem section" id="products" aria-labelledby="ecosystem-title">
+        <div class="shell panel-shell">
+          <div class="section-title reveal"><h2 id="ecosystem-title">Our Product Ecosystem</h2><p>Practical tools for everyday life, career opportunities, and business solutions.</p></div>
+          <div class="ecosystem-grid">
+            <section class="stream-panel mobile-stream reveal" aria-labelledby="mobile-title">
+              <div class="stream-heading"><span class="stream-symbol blue"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><div><h3 id="mobile-title">Mobile Apps</h3><p>Practical utilities for individuals and everyday life.</p></div></div>
+              <div class="product-grid" id="concepts">
+                <a class="product-tile existing" href="/app/stoored"><span class="tile-icon blue"><svg aria-hidden="true"><use href="#i-home"/></svg></span><h4>Stoored</h4><p>Home inventory made simple</p><small>Existing product</small></a>
+                <article class="product-tile planned"><span class="tile-icon green"><svg aria-hidden="true"><use href="#i-wrench"/></svg></span><h4>Home &amp; Appliance Maintenance</h4><p>Keep household care in shape</p><small>Coming soon</small></article>
+                <article class="product-tile planned"><span class="tile-icon coral"><svg aria-hidden="true"><use href="#i-receipt"/></svg></span><h4>Receipt &amp; Warranty Vault</h4><p>Keep proof and coverage together</p><small>Coming soon</small></article>
+                <article class="product-tile planned"><span class="tile-icon purple"><svg aria-hidden="true"><use href="#i-box"/></svg></span><h4>Moving Box &amp; Relocation</h4><p>Know what is in every box</p><small>Coming soon</small></article>
+                <article class="product-tile planned"><span class="tile-icon blue"><svg aria-hidden="true"><use href="#i-calendar"/></svg></span><h4>Document Expiry</h4><p>Track important dates</p><small>Coming soon</small></article>
+                <article class="product-tile planned"><span class="tile-icon amber"><svg aria-hidden="true"><use href="#i-bell"/></svg></span><h4>Subscription &amp; Renewal</h4><p>See recurring commitments</p><small>Coming soon</small></article>
+                <article class="product-tile planned"><span class="tile-icon teal"><svg aria-hidden="true"><use href="#i-shield"/></svg></span><h4>Insurance Evidence</h4><p>Organise claim evidence</p><small>Coming soon</small></article>
+                <a class="product-tile existing" id="ematch-lite" href="/app/ematch-lite"><span class="tile-icon green"><svg aria-hidden="true"><use href="#i-trend"/></svg></span><h4>eMatch Lite</h4><p>Find your fit and grow your career</p><small>Existing product</small></a>
+              </div>
+            </section>
+            <section class="stream-panel platform-stream reveal" aria-labelledby="platform-title">
+              <div class="stream-heading"><span class="stream-symbol green"><svg aria-hidden="true"><use href="#i-monitor"/></svg></span><div><h3 id="platform-title">Solution Platforms</h3><p>Specialised solutions for businesses and professional teams.</p></div></div>
+              <article class="platform-card" id="ematch"><div class="platform-logo"><svg aria-hidden="true"><use href="#i-users"/></svg></div><div><span class="status coming-soon-status">Coming soon</span><h4>eMatch</h4><p>A B2B recruitment agency SaaS designed to use seven-category matching. The product is not yet complete and development is currently on hold.</p></div><a href="#featured" aria-label="Read more about eMatch">→</a></article>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="featured section" id="featured" aria-labelledby="featured-title">
+        <div class="shell"><div class="section-title reveal"><h2 id="featured-title">Featured Products</h2><p>Focused tools for the moments when a clearer next step matters.</p></div>
+          <div class="featured-grid">
+            <article class="featured-card reveal"><div class="featured-photo photo-stoored" role="img" aria-label="A person organising household belongings"></div><div><span class="status existing-status">Existing product</span><h3>Stoored</h3><p>Bring useful information about belongings and daily life into one clearer place.</p><a href="/app/stoored">Open Stoored →</a></div></article>
+            <article class="featured-card reveal"><div class="featured-photo photo-lite" role="img" aria-label="A job seeker comparing a CV with a job description"></div><div><span class="status existing-status">Existing product</span><h3>eMatch Lite</h3><p>Compare a CV with a job description across seven categories, see the match and gaps, and understand how the CV can improve.</p><a href="/app/ematch-lite">Open eMatch Lite →</a></div></article>
+            <article class="featured-card reveal"><div class="featured-photo photo-ematch" role="img" aria-label="A recruiter reviewing candidate matching information"></div><div><span class="status coming-soon-status">Coming soon</span><h3>eMatch</h3><p>A seven-category recruitment matching platform that is not yet complete. Development is currently on hold.</p></div></article>
+          </div>
+        </div>
+      </section>
+      <section class="scenarios section" id="home-solutions" aria-labelledby="scenario-title">
+        <div class="shell"><div class="section-title reveal"><h2 id="scenario-title">Solutions for the Moments That Matter</h2><p>Different tools for different stages of your life and work.</p></div>
+          <div class="scenario-grid">
+            <article class="scenario-card reveal"><div class="scenario-photo home-photo"></div><div class="scenario-heading"><span class="tile-icon blue"><svg aria-hidden="true"><use href="#i-home"/></svg></span><h3>Manage Your Home</h3></div><p>Keep track of belongings, maintenance, receipts, warranties, and moving details.</p></article>
+            <article class="scenario-card reveal"><div class="scenario-photo career-photo"></div><div class="scenario-heading"><span class="tile-icon blue"><svg aria-hidden="true"><use href="#i-briefcase"/></svg></span><h3>Advance Your Career</h3></div><p>Use eMatch Lite to understand your fit, identify gaps, and strengthen applications.</p></article>
+            <article class="scenario-card reveal"><div class="scenario-photo talent-photo"></div><div class="scenario-heading"><span class="tile-icon royal"><svg aria-hidden="true"><use href="#i-users"/></svg></span><h3>Find the Right Talent</h3></div><p>eMatch is designed to support candidate-job alignment with clear matching insights; development is currently on hold.</p></article>
+            <article class="scenario-card reveal"><div class="scenario-photo organise-photo"></div><div class="scenario-heading"><span class="tile-icon purple"><svg aria-hidden="true"><use href="#i-calendar"/></svg></span><h3>Stay Organised Through Life</h3></div><p>Keep important documents, renewals, and life events easier to see and act on.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="why section" id="why-852" aria-labelledby="why-title"><div class="shell"><div class="section-title reveal"><h2 id="why-title">Why 852 Technologies</h2></div><div class="why-grid">
+        <article><span class="benefit-icon green"><svg aria-hidden="true"><use href="#i-leaf"/></svg></span><div><h3>Focused on Real Needs</h3><p>Practical tools for everyday challenges and opportunities.</p></div></article>
+        <article><span class="benefit-icon blue"><svg aria-hidden="true"><use href="#i-gear"/></svg></span><div><h3>Simple and Easy to Use</h3><p>Designed for real people, not just technology experts.</p></div></article>
+        <article><span class="benefit-icon teal"><svg aria-hidden="true"><use href="#i-shield"/></svg></span><div><h3>Privacy and Your Control</h3><p>Your information and choices remain central to the experience.</p></div></article>
+        <article><span class="benefit-icon coral"><svg aria-hidden="true"><use href="#i-heart"/></svg></span><div><h3>Improving Life and Work</h3><p>Helping people feel more prepared, organised, and able to move forward.</p></div></article>
+      </div></div></section>
+      <section class="story section" id="story"><div class="shell story-grid"><div class="story-mark reveal"><strong>852</strong><span>TECHNOLOGIES</span><p>Useful technology should help people manage life better.</p></div><div class="story-copy reveal"><p class="eyebrow">Our Story</p><h2>Practical technology, built around real life.</h2><p>852 Technologies brings together mobile apps for individuals and solution platforms for organisations. Both streams share one purpose: reducing friction, creating clarity, and helping people move forward.</p><a class="button button-primary" href="https://opnform.com/forms/client-inquiry-service-request-form-zqhnap?2353851e-27a3-4740-9375-fe7be45b1de8=Contact+Us" target="_blank" rel="noopener">Start a Conversation <span>→</span></a></div></div></section>
+      <section class="contact" id="contact"><div class="shell contact-inner"><div><h2>Have a challenge worth making easier?</h2><p>Let’s explore the next useful step together.</p></div><a class="button button-primary" href="https://opnform.com/forms/client-inquiry-service-request-form-zqhnap?2353851e-27a3-4740-9375-fe7be45b1de8=Contact+Us" target="_blank" rel="noopener">Contact Us</a></div></section>
+    </main>
+    <footer class="site-footer"><div class="shell footer-grid"><a class="brand footer-brand" href="#top"><strong>852</strong><span>TECHNOLOGIES</span></a><p>Making everyday life easier with practical digital tools for individuals and businesses. Helping people move forward.</p><nav aria-label="Footer navigation"><a href="#products">Products</a><a href="#story">Our Story</a><a href="#concepts">Future Concepts</a><a href="https://opnform.com/forms/client-inquiry-service-request-form-zqhnap?2353851e-27a3-4740-9375-fe7be45b1de8=Contact+Us" target="_blank" rel="noopener">Support</a></nav><div class="footer-meta"><span>© <span data-year></span> 852 Technologies</span><button type="button" data-open-review>Production review</button></div></div></footer>
+    <dialog class="review-dialog" data-review-dialog><button class="dialog-close" type="button" aria-label="Close" data-close-review>×</button><p class="eyebrow">Production review</p><h2>Items still needed before launch</h2><ul><li>Final logo files and brand guidelines</li><li>Approved privacy, terms, and company information</li><li>Confirmation of production image licensing and final copy</li></ul><button class="button button-primary" type="button" data-close-review>Got it</button></dialog>
+  </body>
+</html>
