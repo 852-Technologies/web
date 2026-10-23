@@ -33,3 +33,24 @@ tabs.forEach((tab) => {
     stageLabel.textContent = screenDetails[key].label;
   });
 });
+
+// Footer page-view count from GoatCounter. The site code comes from the tracking script's tag, so
+// it is set in one place (index.html). The number shows only if it loads: a new site, a blocker or
+// "Allow adding visitor counts on your website" being off all leave the line hidden.
+(() => {
+  const box = document.querySelector('[data-visitor-counter]');
+  const tag = document.querySelector('script[data-goatcounter]');
+  if (!box || !tag || /YOURCODE/.test(tag.dataset.goatcounter)) return;
+  const base = tag.dataset.goatcounter.replace(/\/count$/, '');
+  window.addEventListener('load', () => {
+    const data = window.goatcounter && window.goatcounter.get_data ? window.goatcounter.get_data() : null;
+    const path = data && data.p ? data.p : location.pathname;
+    fetch(base + '/counter/' + encodeURIComponent(path) + '.json')
+      .then((response) => (response.ok ? response.json() : Promise.reject(new Error('no count'))))
+      .then((result) => {
+        box.querySelector('[data-visitor-count]').textContent = result.count;
+        box.hidden = false;
+      })
+      .catch(() => {});
+  });
+})();
