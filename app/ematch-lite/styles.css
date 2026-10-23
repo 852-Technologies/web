@@ -219,6 +219,8 @@ img { max-width: 100%; display: block; }
 .footer .brand em { font-size: 12px; }
 .footer p { font-size: 11px; text-align: center; }
 .footer > span, .footer-inner > span { font-size: 11px; }
+.visitor-counter { grid-column: 1 / -1; justify-self: center; margin: 0; font-size: 11px; }
+.visitor-counter span { font-weight: 700; }
 .footer-links { display: flex; align-items: center; gap: 16px; white-space: nowrap; }
 .footer-links a { color: #c2cfdb; font-size: 11px; font-weight: 750; text-decoration: none; border-bottom: 1px solid transparent; }
 .footer-links a:hover, .footer-links a:focus-visible { color: white; border-bottom-color: var(--amber); }
