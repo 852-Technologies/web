@@ -84,3 +84,22 @@ document.querySelectorAll('[data-concept]').forEach((button) => {
 document.querySelectorAll('[data-year]').forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
+
+(() => {
+  const box = document.querySelector('[data-visitor-counter]');
+  const tag = document.querySelector('script[data-goatcounter]');
+  if (!box || !tag) return;
+  const countOutput = box.querySelector('[data-visitor-count]');
+  if (!countOutput) return;
+  const base = tag.dataset.goatcounter.replace(/\/count$/, '');
+  window.addEventListener('load', () => {
+    const data = window.goatcounter?.get_data?.();
+    const path = data?.p || location.pathname;
+    fetch(`${base}/counter/${encodeURIComponent(path)}.json`)
+      .then((response) => response.json())
+      .then((result) => {
+        if (result?.count !== undefined) countOutput.textContent = result.count;
+      })
+      .catch(() => {});
+  });
+})();
