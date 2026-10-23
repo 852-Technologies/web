@@ -1,0 +1,9 @@
+{
+  "name": "852-technologies-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs"
+  }
+}
