@@ -5,10 +5,10 @@ const stageCount = document.querySelector('#stage-count');
 const stageLabel = document.querySelector('#stage-label');
 
 const screenDetails = {
-  home: { alt: 'Stoored overview screen', count: '100 items', label: 'Everything at a glance' },
-  usage: { alt: 'Stoored consumption records screen', count: '1,551 used', label: 'Understand what you use' },
-  expiry: { alt: 'Stoored expiring products screen', count: '17 expiring', label: 'Use these first' },
-  reorder: { alt: 'Stoored reorder advice screen', count: '11 to reorder', label: 'A smarter shopping list' },
+  home: { alt: 'Itemity overview screen', count: '100 items', label: 'Everything at a glance' },
+  usage: { alt: 'Itemity consumption records screen', count: '1,551 used', label: 'Understand what you use' },
+  expiry: { alt: 'Itemity expiring products screen', count: '17 expiring', label: 'Use these first' },
+  reorder: { alt: 'Itemity reorder advice screen', count: '11 to reorder', label: 'A smarter shopping list' },
 };
 
 window.addEventListener('scroll', () => {
