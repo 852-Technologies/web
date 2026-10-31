@@ -2,6 +2,12 @@
 
 This repository contains the static website for 852 Technologies and its product pages.
 
+## Project handoffs
+
+Read [PRIVACY_COMPLIANCE.md](PRIVACY_COMPLIANCE.md) before changing the Privacy Notice, analytics, forms, contact links, domains, hosting, tracking, cookies, advertising, or third-party services.
+
+Read [852_Technologies_Branding_Chat_Handoff.md](852_Technologies_Branding_Chat_Handoff.md) before changing branding, logo usage, visual direction, or core messaging.
+
 ## Run locally
 
 Install [Node.js](https://nodejs.org/), then run either command from the repository root:

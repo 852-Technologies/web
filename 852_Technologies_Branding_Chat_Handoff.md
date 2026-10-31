@@ -6,8 +6,8 @@
 
 ## 1. Company and website context
 
-- **Company:** 852 Technologies
-- **Website:** https://852-technologies.github.io/web/
+- **Company:** 852 Technologies LLC
+- **Website:** https://852technologies.com/
 - **Website's existing key messaging:** “Making Everyday Life Easier. Helping People Move Forward.”
 - **Positioning:** Practical digital tools for individuals and businesses, making daily tasks easier, helping people stay organized, make informed decisions, and access opportunities.
 - **Products referenced on the website:** Itemity (household inventory), eMatch Lite (CV/job fit analysis), and eMatch (B2B recruitment matching; development on hold), plus other proposed everyday-life utilities.
@@ -98,6 +98,8 @@ These values are **draft visual suggestions from the poster**, not formally appr
 
 **Gradient direction:** Primarily blue → cyan, with orange used sparingly as an optional accent. Keep corporate identity more restrained than multicolor exploration boards.
 
+**Website product-card icon rule (approved October 30, 2026):** Alternate primary blue and teal/cyan in DOM order, beginning with blue. Do not assign product-card icon colors ad hoc. Reserve orange for intentional emphasis rather than the standard product sequence.
+
 **Typography suggestion:** Inter family. “852” bold; “Technologies” lighter; clear size hierarchy. Not yet confirmed as the final corporate font.
 
 **Draft poster headline/copy:** “Connected ideas. Brighter everyday life.” The earlier website language is “Making Everyday Life Easier. Helping People Move Forward.” Treat the new headline as **proposed promotional copy, not an approved replacement** for website messaging.
@@ -137,7 +139,7 @@ The selected logo and the poster should be visually inspected directly when avai
 
 ## 8. Suggested prompt to start a new VS Code/Codex chat
 
-> I am continuing the 852 Technologies brand identity project. Read `852_Technologies_Branding_Chat_Handoff.md`. The selected logo is **Set 1 #1, “Interlock Hex (Balanced)”**, from the first interlocking concept board. Use `branding/references/a_clean_modern_corporate_branding_board_logo_co.png` as the **primary visual reference** and `branding/references/a_clean_polished_brand_identity_logo_style_guid.png` as a **draft** brand-guide reference if those files have been added. I want a clean, lightweight, elegant, distinctive technology identity with two truly interlocking hexagonal links. The next objective is to develop an editable SVG master mark and production-ready variations, verify colors and small-size legibility, and align with https://852-technologies.github.io/web/. Do not change the selected concept or claim draft colors/tagline are approved without asking.
+> I am continuing the 852 Technologies brand identity project. Read `852_Technologies_Branding_Chat_Handoff.md`. The selected logo is **Set 1 #1, “Interlock Hex (Balanced)”**, from the first interlocking concept board. Use `branding/references/a_clean_modern_corporate_branding_board_logo_co.png` as the **primary visual reference** and `branding/references/a_clean_polished_brand_identity_logo_style_guid.png` as a **draft** brand-guide reference if those files have been added. I want a clean, lightweight, elegant, distinctive technology identity with two truly interlocking hexagonal links. The next objective is to develop an editable SVG master mark and production-ready variations, verify colors and small-size legibility, and align with https://852technologies.com/. Do not change the selected concept or claim draft colors/tagline are approved without asking.
 
 ---
 
