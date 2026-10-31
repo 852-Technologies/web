@@ -298,6 +298,32 @@ body::before{
   .hero-note::before{
     inset:-8px -5px -7px -10px;
   }
+  .product-tile{
+    grid-template-columns:40px minmax(0,1fr) minmax(72px,auto);
+    column-gap:14px;
+    row-gap:4px;
+    min-height:78px;
+    padding:12px 14px;
+  }
+  .product-tile .tile-icon{
+    width:40px;
+    height:40px;
+    margin:0;
+  }
+  .product-tile h4,
+  .product-tile p{
+    min-width:0;
+    overflow-wrap:anywhere;
+  }
+  .product-tile h4{
+    line-height:1.22;
+  }
+  .product-tile small{
+    max-width:82px;
+    white-space:normal;
+    line-height:1.25;
+    text-align:right;
+  }
   .legal-main{padding:36px 0 55px}
   .legal-card{border-radius:17px;padding:24px 19px}
   .legal-card h2{font-size:20px}
