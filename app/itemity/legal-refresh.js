@@ -3,34 +3,6 @@
   const isChinese = lang.toLowerCase().startsWith('zh');
   const page = location.pathname.split('/').pop() || '';
 
-  const replacements = isChinese
-    ? [
-        [/852 Technologies(?! LLC)/g, '852 Technologies LLC'],
-        [/\[the Commonwealth of Pennsylvania, United States\]/g, 'the Commonwealth of Pennsylvania, United States'],
-        [/14 天/g, '10 天'],
-        [/RevenueCat/g, '購買管理服務供應商'],
-        [/Tally/g, '意見表格服務供應商'],
-        [/GoatCounter/g, '重視私隱的彙總分析服務供應商']
-      ]
-    : [
-        [/852 Technologies(?! LLC)/g, '852 Technologies LLC'],
-        [/\[the Commonwealth of Pennsylvania, United States\]/g, 'the Commonwealth of Pennsylvania, United States'],
-        [/14 days/g, '10 days'],
-        [/RevenueCat/g, 'our purchase-management provider'],
-        [/Tally/g, 'our feedback-form provider'],
-        [/GoatCounter/g, 'our privacy-oriented aggregate analytics provider']
-      ];
-
-  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-  const textNodes = [];
-  while (walker.nextNode()) textNodes.push(walker.currentNode);
-  textNodes.forEach((node) => {
-    if (node.parentElement?.closest('script, style')) return;
-    let value = node.nodeValue;
-    replacements.forEach(([pattern, replacement]) => { value = value.replace(pattern, replacement); });
-    node.nodeValue = value;
-  });
-
   const originalChildren = [...document.body.children].filter((node) => node.tagName !== 'SCRIPT');
   const header = document.createElement('header');
   header.className = 'legal-header';

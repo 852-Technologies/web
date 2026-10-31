@@ -1,6 +1,6 @@
 # Privacy and compliance handoff
 
-**Last reviewed:** October 30, 2026<br>
+**Last reviewed:** October 31, 2026<br>
 **Public notice effective date:** November 1, 2026<br>
 **Scope:** The main 852 Technologies corporate website
 
@@ -57,6 +57,7 @@ The Privacy Notice currently represents that:
 - Contact and inquiry information may be processed by a form-processing provider.
 - Providers may process information outside Pennsylvania or the United States.
 - Visitors may request access, correction, or deletion by emailing `support@852technologies.com`, subject to appropriate legal, security, and recordkeeping exceptions.
+- Depending on where they live, visitors may also have the right to obtain a copy of their information, object to or restrict certain processing, withdraw consent, or complain to their local data-protection authority. Requests are answered within the time applicable law requires (generally 30 to 45 days); if a request cannot be fully honored, the reason is given and the visitor may ask for the decision to be reviewed. This wording is neutral about location and does not claim compliance with any specific regional law.
 - The website is intended for a general business audience and is not directed to children under 13.
 - Browser Do Not Track and Global Privacy Control signals do not change the site's operation because the site does not sell personal information or conduct tracking-based advertising.
 - Material notice changes will be posted on the Privacy Notice page and identified with an updated effective date.
