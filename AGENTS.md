@@ -5,6 +5,7 @@ Before making changes in this repository, read:
 1. `README.md`
 2. `PRIVACY_COMPLIANCE.md`
 3. `852_Technologies_Branding_Chat_Handoff.md` when working on branding, visuals, messaging, logos, or page layout
+4. `app/itemity/ITEMITY_PRIVACY_COMPLIANCE.md` before changing Itemity privacy or terms pages, purchases, the free trial, barcode lookup, analytics, feedback forms, hosting, deletion, or app-store privacy declarations
 
 Treat `PRIVACY_COMPLIANCE.md` as the source of truth for the corporate website's privacy and compliance decisions. Read it before changing `privacy.html`, analytics, forms, contact links, domains, hosting, tracking, cookies, advertising, or third-party services.
 
