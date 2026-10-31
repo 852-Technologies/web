@@ -1,7 +1,6 @@
 const header = document.querySelector('[data-header]');
 const navToggle = document.querySelector('.nav-toggle');
 const primaryNav = document.querySelector('#primary-nav');
-const reviewDialog = document.querySelector('[data-review-dialog]');
 const toast = document.querySelector('[data-toast]');
 
 function setMenu(open) {
@@ -57,18 +56,6 @@ document.querySelectorAll('.filter-button').forEach((button) => {
       card.classList.toggle('is-hidden', filter !== 'all' && card.dataset.status !== filter);
     });
   });
-});
-
-function openReview() {
-  if (typeof reviewDialog?.showModal === 'function') reviewDialog.showModal();
-}
-
-document.querySelectorAll('[data-open-review]').forEach((button) => button.addEventListener('click', openReview));
-document.querySelectorAll('[data-close-review]').forEach((button) => {
-  button.addEventListener('click', () => reviewDialog?.close());
-});
-reviewDialog?.addEventListener('click', (event) => {
-  if (event.target === reviewDialog) reviewDialog.close();
 });
 
 let toastTimer;
