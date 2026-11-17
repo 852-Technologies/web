@@ -1,6 +1,6 @@
 # Itemity privacy and compliance handoff
 
-Last reviewed: October 31, 2026
+Last reviewed: November 12, 2026
 
 Read this file before changing Itemity privacy or terms pages, purchases, the free trial, barcode lookup, analytics, feedback forms, hosting, account/data deletion, liability or support wording, or app-store privacy declarations.
 
@@ -20,7 +20,7 @@ This is an implementation and maintenance record, not a legal certification. Req
 - Company/controller: 852 Technologies LLC
 - Company location: Pennsylvania, United States
 - Privacy/support contact: support@852technologies.com
-- Current public-notice effective date: November 1, 2026
+- Current public-notice effective date: November 12, 2026
 - Itemity Pro introductory free-access period: 10 days after first installation (the closed-test build profile uses 5; that is test-only and is not in the notices)
 - Support: reasonable efforts only. No SLA, response time, or level of support is promised (Contact section). Privacy requests are answered within the time applicable law requires (generally 30 to 45 days). Deletion of the purchase-provider record is processed within the time applicable law requires; do not publish a fixed number of days.
 
@@ -33,6 +33,7 @@ Approved public categories:
 - `purchase-management provider` for RevenueCat
 - `app-update and diagnostics provider` for Expo (EAS Update and EAS Observe)
 - `feedback-form provider` for Tally
+- `automated-abuse-prevention provider` for Google reCAPTCHA
 - `privacy-oriented aggregate analytics provider` for GoatCounter
 - `website hosting and content-delivery providers` for GitHub Pages and Google Fonts
 - `public hosting service for an open-source icon library` for the GitHub-hosted icon files
@@ -94,15 +95,21 @@ Do not remove a data-flow disclosure merely to avoid naming a vendor. App-store 
 
 ### Website feedback
 
-- Current provider: Tally. Feedback is optional.
-- Data can include the submitted answers, optional name/email fields (used only to tell people when an iPhone version is available), and ordinary technical request data. The embedded form may contact the provider when it loads, before a visitor submits.
-- Review Tally retention and deletion behavior when form settings change.
+- Current form provider: Tally. The website keeps the existing optional general-feedback form and adds a separate optional iPhone-interest form at `https://tally.so/r/aO5ERW`.
+- The iPhone-interest form requires an explicit confirmation that the respondent would install Itemity on iPhone and a syntactically valid email address. It uses the email address to permit one response per address, deter duplicate submissions and support manual spam review. Treat this as a practical proxy for a unique person, not verified identity.
+- The form also has an optional feature-suggestion field and a separate, unchecked option for one iPhone-availability email. It does not enrol respondents in a general marketing list. The form is intended for people aged 13 or older.
+- Public progress may show only the manually audited aggregate number of eligible submissions toward 500. Never expose email addresses or individual answers, and never use GoatCounter page views, social likes or old general-feedback responses in the campaign total.
+- Tally receives submitted answers and ordinary technical request data and may be contacted when the embed loads, before submission. Duplicate prevention is configured against the email field; it applies only to submissions received after that setting was enabled.
+- Current abuse-prevention provider: Google reCAPTCHA, configured through Tally. It processes technical, device and interaction signals for security and abuse prevention and sets the necessary `_GRECAPTCHA` cookie when executed for risk analysis. Google states that reCAPTCHA data is not used for personalised advertising. Keep the public notice's bot-protection disclosure accurate if this block or provider changes.
+- `saveForLater` and partial submissions are off. The form has a visible Privacy Policy link, a deletion route through `support@852technologies.com`, a 500-character limit on optional suggestions and a custom confirmation page.
+- Operational retention: keep iPhone-interest email addresses while the campaign is active and as reasonably necessary to validate the aggregate count. When the campaign closes, delete counting-only email addresses and keep only the aggregate result, subject to limited legal, security or recordkeeping needs. For respondents who separately request one availability notice, keep the address until the notice is sent, consent is withdrawn, the campaign closes or a valid deletion request applies, whichever comes first. Review Tally deletion behavior and remove test submissions before establishing the public baseline.
 
 ### Website analytics
 
 - Current provider: GoatCounter. Purpose: aggregate page-view measurement.
 - Current configuration is intended to avoid cookies, local-storage identifiers, persistent visitor IDs, stored full IP addresses, and stored full user-agent strings.
 - Do not add advertising analytics, fingerprinting, session replay, or cross-site tracking without a new privacy review and notice update.
+- The cookie-free statement applies to GoatCounter, not to the necessary `_GRECAPTCHA` cookie used by the separate abuse-prevention service on the iPhone-interest form.
 
 ### Hosting and fonts
 
@@ -144,7 +151,7 @@ Do not remove a data-flow disclosure merely to avoid naming a vendor. App-store 
 - Verify the Android automatic-backup statement in a built app.
 - The barcode lookup User-Agent in the app (`src/utils/productLookup.ts`) contains a personal email address; switch it to support@852technologies.com.
 - Consider self-hosting the Poppins font on `index.html`.
-- Add a visible link to the Privacy Policy beside the Tally feedback form (configured in Tally's editor, not in this repository).
+- Keep the visible Privacy Policy link and deletion contact inside the Tally iPhone-interest form and beside each website embed.
 - Consider an open-source licences/attributions screen in the app (Open Food Facts ODbL, the icon set's licence, library notices).
 - Have counsel review the liability and governing-law wording.
 
@@ -156,4 +163,5 @@ Do not remove a data-flow disclosure merely to avoid naming a vendor. App-store 
 - RevenueCat privacy policy: https://www.revenuecat.com/privacy-policy
 - RevenueCat Apple App Privacy guidance: https://www.revenuecat.com/docs/platform-resources/apple-platform-resources/apple-app-privacy
 - Tally GDPR guidance: https://tally.so/help/gdpr
+- Google reCAPTCHA data-processing FAQ: https://docs.cloud.google.com/recaptcha/docs/faq
 - GoatCounter privacy documentation: https://www.goatcounter.com/help/privacy

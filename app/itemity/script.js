@@ -34,6 +34,34 @@ tabs.forEach((tab) => {
   });
 });
 
+// The campaign count is published only after Tally submissions are reviewed. To update it,
+// set data-count and data-updated on the campaign progress element in index.html.
+(() => {
+  const progress = document.querySelector('[data-campaign-progress]');
+  if (!progress) return;
+
+  const count = Number.parseInt(progress.dataset.count, 10);
+  const goal = Number.parseInt(progress.dataset.goal, 10) || 500;
+  if (!Number.isFinite(count) || count < 0) return;
+
+  const verifiedCount = Math.min(count, goal);
+  const percentage = Math.min((verifiedCount / goal) * 100, 100);
+  const bar = progress.querySelector('[data-campaign-progress-bar]');
+  const countLabel = progress.querySelector('[data-campaign-count]');
+  const status = progress.querySelector('[data-campaign-status]');
+  const updated = progress.querySelector('[data-campaign-updated]');
+  const track = progress.querySelector('[role="progressbar"]');
+
+  if (bar) bar.style.width = `${percentage}%`;
+  if (countLabel) countLabel.textContent = `${verifiedCount} of ${goal}`;
+  if (status) status.textContent = verifiedCount >= goal ? 'Goal reached' : `${goal - verifiedCount} to go`;
+  if (updated) updated.textContent = progress.dataset.updated ? `Verified ${progress.dataset.updated}` : 'Verified submission count';
+  if (track) {
+    track.setAttribute('aria-valuenow', String(verifiedCount));
+    track.setAttribute('aria-valuetext', `${verifiedCount} of ${goal} verified expressions of interest`);
+  }
+})();
+
 // Footer page-view count from GoatCounter. The site code comes from the tracking script's tag, so
 // it is set in one place (index.html). The line is always shown ("–" until the number loads, and
 // if it can't, e.g. a blocker or "Allow adding visitor counts on your website" being off).
