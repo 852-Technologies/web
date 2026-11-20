@@ -483,3 +483,7 @@ button { font: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+
+/* Text-only Reorder Advice cards should fit their content. */
+#reorder-advice .step-card { min-height: 0; }

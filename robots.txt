@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://852technologies.com/app/itemity/sitemap.xml
